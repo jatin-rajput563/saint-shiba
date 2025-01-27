@@ -21,6 +21,7 @@
     --lh-95: 95.52px;
     /* ---color-------- */
     --grey: #B8B7B7;
+    --light-grey: #BBBBBB;
     --orenge: #F06500;
     --light-black: #1D1A1A;
 }
@@ -110,6 +111,10 @@
 
 .light-black {
     background-color: var(--light-black) !important;
+}
+
+.light-grey {
+    color: var(--light-grey) !important;
 }
 
 @media (max-width:575.98px) {

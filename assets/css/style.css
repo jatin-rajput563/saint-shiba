@@ -126,8 +126,201 @@
 .mt-48 {
     margin-top: 48px;
 }
-.sec-3-img{
+
+.sec-3-img {
     transform: translateX(180px);
+}
+
+.Tokenomics-box {
+    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.1) 0.97%, rgba(255, 255, 255, 0) 103.14%);
+    backdrop-filter: blur(32px) !important;
+    padding: 16px 20px;
+    border: 1px solid var(--fc-slate-gray) !important;
+    border-radius: 10px;
+    transition: all 400ms linear;
+    width: 100%;
+    max-width: 424px;
+}
+
+/* ------------accordion--------------- */
+.accordion {
+    --bs-accordion-bg: #0F0E0E !important;
+    border: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: unset !important;
+    background-color: #100F0F !important;
+    box-shadow: unset !important;
+    border: none !important;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.accordion-item {
+    color: white !important;
+    /* background-color: var(--bs-accordion-bg); */
+    border: 1px solid !important;
+    border: linear-gradient(95.21deg, rgba(255, 255, 255, 0.2) -0.59%, rgba(255, 255, 255, 0.092) 106.99%) !important;
+    border-radius: 10px !important;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.parent {
+    width: 92px;
+    height: 67px;
+}
+
+.number {
+    color: #ffffff;
+}
+
+.card-1,
+.card-2 {
+    height: 154px;
+    padding: 16px 20px;
+    position: relative;
+    border-radius: 10px;
+    backdrop-filter: blur(32px);
+}
+
+.card-1:hover,
+.card-2:hover {
+    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.1) 0.97%, rgba(255, 255, 255, 0) 103.14%);
+}
+
+.card-1::before,
+.card-2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    padding: 1px;
+    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.2) 0.97%, rgba(255, 255, 255, 0.1) 103.14%);
+    mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+    mask-composite: exclude;
+}
+
+.image-parent {
+    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.05) 0.97%, rgba(255, 255, 255, 0) 103.14%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.image-parent::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-top: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.2) 0.97%, rgba(255, 255, 255, 0.1) 103.14%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+}
+
+.box-2 {
+    width: 50px;
+    height: 50px;
+    background: var(--bg-aqua-green);
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.bg-color {
+    background-color: var(--bg-black-wash);
+}
+
+.bg-1 {
+    background: var(--color-royal-flycatcher-crest);
+}
+
+.bg-2 {
+    background: var(--bg-thick-purple);
+}
+
+.bg-3 {
+    background: var(--bg-krishna-blue);
+}
+
+.bg-4 {
+    background: var(--color-chrome-yellow);
+}
+
+.bg-5 {
+    background: var(--bg-neon-fuchsia);
+}
+
+.card-3 {
+    max-width: 315px;
+}
+
+
+.tablebox::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+    padding-right: 1px;
+    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.2) 0.97%, rgba(255, 255, 255, 0.1) 103.14%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+}
+
+.overflowAuto {
+    overflow: auto !important;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.table-1 {
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table-row {
+    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.05) 0.97%, rgba(255, 255, 255, 0) 103.14%);
+}
+
+@media(min-width:576px) {
+    .py-70 {
+        padding: 30px;
+    }
+}
+
+@media (max-width:991.98px) {
+    .card-1 {
+        margin-top: 24px;
+    }
+}
+
+@media (max-width:768.98px) {
+    .card-1 {
+        margin-top: 0px;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -150,4 +343,23 @@
     .show-navbar {
         right: 0 !important;
     }
+
+    .center {
+        text-align: center;
+        margin: auto;
+        display: flex;
+    }
+
+    .mt-82 {
+        margin-top: 82px;
+    }
+
+    .sec-1-bg {
+        background-position: left;
+    }
+
+    .gap-32 {
+        gap: 12px;
+    }
+
 }
