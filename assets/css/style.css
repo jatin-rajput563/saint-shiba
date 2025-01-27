@@ -99,7 +99,35 @@
 
 /* ------------section-3------------ */
 .h-812 {
-    height: 812px;
+    min-height: 812px;
+}
+
+.cras-btns {
+    width: 71px;
+    height: 71px;
+    border-radius: 100%;
+    background: linear-gradient(90deg, #FFA800 0%, #F06500 100%);
+}
+
+.sec-3-btns {
+    max-width: 660px;
+    border-radius: 46px;
+    background: #151313;
+}
+
+.sec-3-btns:hover {
+    background: black;
+}
+
+.m-11 {
+    margin: 11px 0 11px 13px;
+}
+
+.mt-48 {
+    margin-top: 48px;
+}
+.sec-3-img{
+    transform: translateX(180px);
 }
 
 @media (max-width: 991.98px) {
