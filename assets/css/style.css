@@ -23,6 +23,11 @@
     padding: 7px 23px 7px 23px;
     border-radius: 23.5px;
     background: linear-gradient(90deg, #FFA800 0%, #F06500 100%);
+    transition: all 200ms linear;
+}
+
+.home-btn:hover {
+    background: linear-gradient(90deg, #ad754e 0%, #b37b0b 100%);
 }
 
 .curser-pointer {
@@ -60,12 +65,36 @@
     z-index: 5;
 }
 
-.mx-660 {
-    max-width: 660px;
+.mx-1272 {
+    max-width: 1272px;
 }
 
 .pt-227 {
     padding-top: 227px;
+}
+
+.mx-660 {
+    max-width: 660px;
+}
+
+.section-1-top-para {
+    backdrop-filter: blur(32px);
+    transform: translateY(-114px);
+    padding: 24px;
+    border: 1px solid grey;
+    z-index: 4;
+    border-radius: 10px;
+    max-width: 1320px;
+}
+
+.sec-2-right-layer {
+    right: 0;
+    top: 25%;
+}
+
+.sec-2-left-layer {
+    left: 0;
+    bottom: -25%;
 }
 
 @media (max-width: 991.98px) {
