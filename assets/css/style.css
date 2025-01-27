@@ -97,6 +97,11 @@
     bottom: -25%;
 }
 
+/* ------------section-3------------ */
+.h-812 {
+    height: 812px;
+}
+
 @media (max-width: 991.98px) {
 
     .nav-link {

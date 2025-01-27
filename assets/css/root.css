@@ -22,6 +22,7 @@
     /* ---color-------- */
     --grey: #B8B7B7;
     --orenge: #F06500;
+    --light-black: #1D1A1A;
 }
 
 .fs-sm {
@@ -105,6 +106,10 @@
 
 .text-orenge {
     color: var(--orenge) !important;
+}
+
+.light-black {
+    background-color: var(--light-black) !important;
 }
 
 @media (max-width:575.98px) {
