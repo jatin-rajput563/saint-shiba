@@ -24,6 +24,11 @@
     --light-grey: #BBBBBB;
     --orenge: #F06500;
     --light-black: #1D1A1A;
+    --bg-yellow: #FFA800;
+    --bg-green: #00E396;
+    --bg-purple: #8B35E2;
+    --bg-blue: #00B2FF;
+    --bg-neon: #FF4560;
 }
 
 .fs-sm {
@@ -102,7 +107,7 @@
 
 /* -----color----- */
 .text-grey {
-    color: var(--grey) !important;
+    color: var(--light-grey) !important;
 }
 
 .text-orenge {
@@ -113,8 +118,32 @@
     background-color: var(--light-black) !important;
 }
 
+.color-orenge {
+    background-color: var(--orenge) !important;
+}
+
 .light-grey {
     color: var(--light-grey) !important;
+}
+
+.color-yellow {
+    background-color: var(--bg-yellow) !important;
+}
+
+.color-green {
+    background-color: var(--bg-green) !important;
+}
+
+.color-purple {
+    background-color: var(--bg-purple) !important;
+}
+
+.color-blue {
+    background-color: var(--bg-blue) !important;
+}
+
+.color-neon {
+    background-color: var(--bg-neon) !important;
 }
 
 @media (max-width:575.98px) {
