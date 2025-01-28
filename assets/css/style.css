@@ -109,6 +109,24 @@
     background: linear-gradient(90deg, #FFA800 0%, #F06500 100%);
 }
 
+.cras-btns:hover {
+    background: white;
+    color: black;
+}
+
+.cras-btns-2 {
+    width: 71px;
+    height: 71px;
+    border-radius: 100%;
+    background: white;
+    color: black;
+}
+
+.cras-btns-2:hover {
+    background: linear-gradient(90deg, #FFA800 0%, #F06500 100%);
+    color: white;
+}
+
 .sec-3-btns {
     max-width: 660px;
     border-radius: 46px;
@@ -128,7 +146,7 @@
 }
 
 .sec-3-img {
-    transform: translateX(180px);
+    transform: translateX(192px);
 }
 
 .Tokenomics-box {
@@ -186,128 +204,51 @@
     color: #ffffff;
 }
 
-.card-1,
-.card-2 {
-    height: 154px;
-    padding: 16px 20px;
-    position: relative;
-    border-radius: 10px;
-    backdrop-filter: blur(32px);
+.pt-24 {
+    padding-top: 24px;
 }
 
-.card-1:hover,
-.card-2:hover {
-    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.1) 0.97%, rgba(255, 255, 255, 0) 103.14%);
+.mt-32 {
+    margin-top: 32px;
 }
 
-.card-1::before,
-.card-2::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 10px;
-    padding: 1px;
-    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.2) 0.97%, rgba(255, 255, 255, 0.1) 103.14%);
-    mask:
-        linear-gradient(#000 0 0) content-box,
-        linear-gradient(#000 0 0);
-    mask-composite: exclude;
+.gap-23 {
+    gap: 23px;
 }
 
-.image-parent {
-    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.05) 0.97%, rgba(255, 255, 255, 0) 103.14%);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+.mt-70 {
+    margin-top: 70px;
 }
 
-.image-parent::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding-top: 1px;
-    padding-left: 1px;
-    padding-right: 1px;
-    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.2) 0.97%, rgba(255, 255, 255, 0.1) 103.14%);
-    -webkit-mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-    mask-composite: exclude;
+.ml-78 {
+    margin-left: 78px;
 }
 
-.box-2 {
-    width: 50px;
-    height: 50px;
-    background: var(--bg-aqua-green);
-    margin-bottom: 15px;
-    border-radius: 4px;
-}
-
-.bg-color {
-    background-color: var(--bg-black-wash);
-}
-
-.bg-1 {
-    background: var(--color-royal-flycatcher-crest);
-}
-
-.bg-2 {
-    background: var(--bg-thick-purple);
-}
-
-.bg-3 {
-    background: var(--bg-krishna-blue);
-}
-
-.bg-4 {
-    background: var(--color-chrome-yellow);
-}
-
-.bg-5 {
-    background: var(--bg-neon-fuchsia);
-}
-
-.card-3 {
-    max-width: 315px;
-}
-
-
-.tablebox::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding-bottom: 1px;
-    padding-left: 1px;
-    padding-right: 1px;
-    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.2) 0.97%, rgba(255, 255, 255, 0.1) 103.14%);
-    -webkit-mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-    mask-composite: exclude;
-}
-
-.overflowAuto {
-    overflow: auto !important;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.table-1 {
-    border-collapse: collapse;
-    width: 100%;
-    overflow-x: auto;
-}
-
-.table-row {
-    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.05) 0.97%, rgba(255, 255, 255, 0) 103.14%);
+.pt-8 {
+    padding-top: 8px;
 }
 
 @media(min-width:576px) {
     .py-70 {
         padding: 30px;
+    }
+
+}
+
+@media(max-width:575.98px) {
+    .center-column {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .gap-23 {
+        gap: 6px;
+    }
+
+    .pb-50 {
+        padding-bottom: 50px;
     }
 }
 
@@ -348,6 +289,7 @@
         text-align: center;
         margin: auto;
         display: flex;
+        justify-content: center;
     }
 
     .mt-82 {
@@ -362,4 +304,24 @@
         gap: 12px;
     }
 
+    .sec-3-img {
+        transform: translateX(132px);
+    }
+
+    .pt-78 {
+        padding-top: 78px;
+    }
+
+    .mt-32 {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    .pt-50 {
+        padding-top: 50px;
+    }
+
+    .ml-78 {
+        margin-left: 0;
+    }
 }
