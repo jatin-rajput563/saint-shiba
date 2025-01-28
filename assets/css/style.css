@@ -322,6 +322,67 @@
     background-image: url(../image/svg/accordion-up-svg.svg) !important;
 }
 
+/* --------------time-line------------- */
+.roadtmap-right-image {
+    right: 0;
+}
+
+.roadmap-circle-image {
+    right: 0;
+}
+
+.py-59 {
+    padding-top: 59px;
+    padding-bottom: 59px;
+}
+
+.roadmap::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 20px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    height: 75%;
+}
+
+.timeline {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    right: -18px;
+    background: linear-gradient(180deg, #FFA800 0%, #F06500 100%);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+.right::after {
+    left: -16px;
+}
+
+.mx-547 {
+    max-width: 547px;
+}
+
 /****** accordion ******/
 .mt-8 {
     margin-top: 8px;
@@ -401,6 +462,36 @@
 @media (max-width:768.98px) {
     .card-1 {
         margin-top: 0px;
+    }
+
+    .text-left {
+        text-align: left;
+    }
+
+    .roadmap::after {
+        left: 45px;
+    }
+
+    .timeline {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .timeline::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    .left::after,
+    .right::after {
+        left: 15px;
+    }
+
+    .right {
+        left: 0%;
     }
 }
 
