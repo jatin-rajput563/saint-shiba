@@ -319,7 +319,7 @@
 }
 
 .footer .accordion-button {
-    margin-top: 24px !important;
+    margin-top: 8px !important;
     padding: 16px 22px 16px 16px !important;
     background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.05) 0.97%, rgba(255, 255, 255, 0) 103.14%) !important;
     backdrop-filter: blur(32px) !important;
