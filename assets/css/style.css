@@ -86,13 +86,27 @@
 }
 
 .section-1-top-para {
-    backdrop-filter: blur(32px);
-    transform: translateY(-114px);
-    padding: 24px;
-    border: 1px solid grey;
-    z-index: 4;
-    border-radius: 10px;
     max-width: 1320px;
+    padding: 24px;
+    border-radius: 10px;
+    z-index: 4;
+    transform: translateY(-114px);
+    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.05) 0.97%, rgba(255, 255, 255, 0) 103.14%);
+    position: relative;
+    backdrop-filter: blur(32px);
+}
+
+.section-1-top-para::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    padding: 1px;
+    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.05) 0.97%, rgba(255, 255, 255, 0) 103.14%);
+    mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+    mask-composite: exclude;
 }
 
 .sec-2-right-layer {
@@ -296,30 +310,71 @@
 }
 
 /* ------------accordion--------------- */
-.accordion-section .accordion-item {
-    color: white !important;
-    background-color: black !important;
+/* footer */
+.footer .accordion {
+    --bs-accordion-btn-focus-box-shadow: none !important;
+    --bs-accordion-border-width: none !important;
+    width: 100%;
+    margin-top: 46px !important;
+}
+
+.footer .accordion-button {
+    margin-top: 24px !important;
+    padding: 16px 22px 16px 16px !important;
+    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.05) 0.97%, rgba(255, 255, 255, 0) 103.14%) !important;
     backdrop-filter: blur(32px) !important;
-    border: 1px solid !important;
-    border: linear-gradient(95.21deg, rgba(255, 255, 255, 0.2) -0.59%, rgba(255, 255, 255, 0.092) 106.99%) !important;
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
 }
 
-.accordion-section .accordion-button:not(.collapsed) {
-    color: unset !important;
-    background-color: unset !important;
-    box-shadow: unset !important;
+.footer .accordion-body {
+    padding: 0px 16px 16px 16px !important;
+    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.09) 0.97%, rgba(255, 255, 255, 0) 103.14%) !important;
+    backdrop-filter: blur(32px) !important;
 }
 
-.accordion-section .accordion-button {
-    background-color: transparent !important;
+.footer .accordion-item {
+    background: linear-gradient(94.88deg, rgba(255, 255, 255, 0.05) 0.97%, rgba(255, 255, 255, 0) 103.14%) !important;
+    backdrop-filter: blur(32px) !important;
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    border-top-left-radius: 10px !important;
 }
 
-.accordion-section .accordion-button:focus {
-    box-shadow: unset !important;
+.footer .accordion-button:not(.collapsed) {
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
 }
 
-.accordion-section .accordion-button::after {
+.footer .accordion-button::after {
     background-image: url(../image/svg/accordion-up-svg.svg) !important;
+}
+
+.mt-32 {
+    margin-top: 32px;
+}
+
+.mt-73 {
+    margin-top: 73px;
+}
+
+.box-3::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: 10px;
+    background: linear-gradient(95.21deg, rgba(255, 255, 255, 0.2) -0.59%, rgba(255, 255, 255, 0.092) 106.99%) !important;
+    mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+    mask-composite: exclude;
+}
+
+.footer-img {
+    right: 0;
 }
 
 /* --------------time-line------------- */
@@ -461,13 +516,7 @@
     }
 }
 
-@media (max-width:991.98px) {
-    .card-1 {
-        margin-top: 24px;
-    }
-}
-
-@media (max-width:768.98px) {
+@media (max-width:767.98px) {
     .card-1 {
         margin-top: 0px;
     }
@@ -504,7 +553,6 @@
 }
 
 @media (max-width: 991.98px) {
-
     .nav-link {
         display: flex !important;
         flex-direction: column;
@@ -538,6 +586,10 @@
 
     .sec-1-bg {
         background-position: left;
+    }
+
+    .card-1 {
+        margin-top: 24px;
     }
 
     .gap-32 {
